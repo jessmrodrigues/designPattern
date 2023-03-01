@@ -1,0 +1,10 @@
+rootProject.name = 'singleton'
+include 'src:main:Builder'
+findProject(':src:main:Builder')?.name = 'Builder'
+include 'src:Builder'
+findProject(':src:Builder')?.name = 'Builder'
+include 'src:factory'
+findProject(':src:factory')?.name = 'factory'
+include 'src:Prototype'
+findProject(':src:Prototype')?.name = 'Prototype'
+
